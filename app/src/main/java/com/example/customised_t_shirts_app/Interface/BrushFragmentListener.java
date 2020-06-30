@@ -1,0 +1,9 @@
+package com.example.customised_t_shirts_app.Interface;
+
+public interface BrushFragmentListener {
+
+    void onBrushSizeChangedListener(float size);
+    void onBrushOpacityChangedListener(int opacity);
+    void onBrushColorChangedListener(int color);
+    void onBrushStateChangedListener(boolean isEraser);
+}

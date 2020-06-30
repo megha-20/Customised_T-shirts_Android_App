@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "558003060239",
+    "firebase_url": "https://customised-t-shirt-app.firebaseio.com",
+    "project_id": "customised-t-shirt-app",
+    "storage_bucket": "customised-t-shirt-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558003060239:android:6d1a2ab3753458a1c3ed7a",
+        "android_client_info": {
+          "package_name": "com.example.customised_t_shirts_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558003060239-vc7rdcp64fqtar5vpt6igcr79s4k3t7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.customised_t_shirts_app",
+            "certificate_hash": "4558d20d9582e4b10972f04c910cd8870ecfc15c"
+          }
+        },
+        {
+          "client_id": "558003060239-lh8bkrtb89o1n9f99bhge7n10ngfm8je.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4H0s7Se07lB6cYAQckND9-7JU6o6CBYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558003060239-lh8bkrtb89o1n9f99bhge7n10ngfm8je.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

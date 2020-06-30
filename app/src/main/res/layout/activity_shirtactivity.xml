@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".shirtactivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/appbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mybottomToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:background="@color/design_default_color_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"></androidx.appcompat.widget.Toolbar>
+
+
+    <ImageButton
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="338dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/design_default_color_primary"
+        android:src="@drawable/ic_save_white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/include"
+        android:layout_alignLeft="@+id/include"
+        android:layout_alignTop="@+id/include"
+        android:layout_alignEnd="@+id/include"
+        android:layout_alignRight="@+id/include"
+        android:layout_alignBottom="@+id/include"
+        android:layout_marginStart="83dp"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="82dp"
+        android:layout_marginRight="82dp"
+        android:layout_marginBottom="12dp"
+        android:text="T-Shirt Design Studio"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:typeface="serif"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/include"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/include"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.022" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/savebtn1"
+        android:layout_below="@+id/include"
+        android:layout_above="@+id/mybottomToolBar">
+
+    <ImageView
+        android:id="@+id/shirtthumbnail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="80dp"/>
+
+        <ImageView
+        android:id="@+id/shirtthumbnail2"
+        android:layout_width="206dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/shirtthumbnail1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="229dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="227dp" />
+
+
+        <ja.burhanrashid52.photoeditor.PhotoEditorView
+            android:id="@+id/image_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="563dp"
+
+            android:layout_alignLeft="@+id/shirtthumbnail1"
+            android:layout_alignTop="@+id/shirtthumbnail1"
+            android:layout_alignRight="@+id/shirtthumbnail1"
+            android:layout_alignBottom="@+id/shirtthumbnail1"
+
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="-2dp"
+            android:scaleType="centerCrop"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <!-- <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="58dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mybottomToolBar"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="257dp"
+        android:layout_marginRight="257dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/design_default_color_primary"
+        android:src="@drawable/ic_text" />-->
+
+    <!--<ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="261dp"
+        android:layout_marginLeft="261dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/ic_dashboard"
+        android:background="@color/design_default_color_primary"/> -->
+
+   <!-- <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="27dp"
+        android:background="@color/design_default_color_primary"
+        android:src="@drawable/ic_brush" />-->
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="331dp"
+        android:layout_marginRight="331dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/design_default_color_primary"
+        android:src="@drawable/ts" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mybottomToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginEnd="318dp"
+        android:layout_marginRight="318dp"
+        android:layout_marginBottom="11dp"
+        android:text="Color"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="serif" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mybottomToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="215dp"
+        android:layout_marginLeft="215dp"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="29dp"
+        android:background="@color/design_default_color_primary"
+        android:src="@drawable/ic_photo_black_24dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_brush"
+        android:layout_width="7dp"
+        android:layout_height="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginRight="23dp"
+        android:layout_marginBottom="-2dp"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_brush1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brush"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/design_default_color_primary"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- <TextView
+        android:id="@+id/textView8"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="9dp"
+        android:text="Text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="serif" />-->
+
+
+  <!--  <androidx.cardview.widget.CardView
+        android:id="@+id/btn_add_image"
+        android:layout_width="71dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="167dp"
+        android:layout_marginRight="167dp"
+        android:layout_marginBottom="1dp"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_photo_black_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallery"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_add_text"
+        android:layout_width="71dp"
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="212dp"
+        android:layout_marginRight="212dp"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Text"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+         android:id="@+id/textView9"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentEnd="true"
+         android:layout_alignParentRight="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginEnd="142dp"
+         android:layout_marginRight="142dp"
+         android:layout_marginBottom="12dp"
+         android:text="Gallery"
+         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+         android:textSize="12sp"
+         android:textStyle="bold"
+         android:typeface="serif" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/btn_emoji"
+        android:layout_width="71dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="325dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="0dp"
+        app:cardBackgroundColor="@color/design_default_color_primary"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/ic_dashboard" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stickers"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--<TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginRight="104dp"
+        android:layout_marginBottom="11dp"
+        android:text="Shapes"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="serif" />-->
+
+   <!-- <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:layout_marginBottom="11dp"
+        android:text="Brush"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:typeface="serif" /> -->
+
+
+</RelativeLayout>
